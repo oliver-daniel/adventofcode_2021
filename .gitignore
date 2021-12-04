@@ -1,0 +1,6 @@
+input/
+test/
+__pycache__/
+.vscode/
+scratch.py
+*.python
