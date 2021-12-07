@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-N = open('test/5lol.txt').read().splitlines()
+N = open('input/5.txt').read().splitlines()
 data = []
 for x, y in map(lambda x: x.split(' -> '), N):
     x = tuple(map(int, x.split(',')))
