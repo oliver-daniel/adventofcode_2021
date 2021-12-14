@@ -43,6 +43,7 @@ def p2():
         _fold(gg, dirn, axis)
     
     _print([ln[:5 * 8] for ln in gg[:7]])
+    return "AHGCPGAU"
 
 if __name__ == '__main__':
     print('P1:', p1())
