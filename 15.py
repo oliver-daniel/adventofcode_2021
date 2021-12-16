@@ -23,8 +23,7 @@ def _traverse(_H = H, _W = W, start=(0, 0), goal=(H - 1, W - 1)):
         while queue:
             cost, pos = q.heappop(queue)
             if pos == goal: return cost
-            elif pos in visited:
-                continue
+            elif pos in visited: continue
             
             visited.add(pos)
             row, col = pos
