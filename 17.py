@@ -9,7 +9,7 @@ def _tri(n):
     return n + _tri(n-1)
 
 def f(x, y, t):
-    return sum(max(x - i, 0) for i in range(t)), t * y - _tri(t - 1)
+    return sum([max(x - i, 0) for i in range(t)]), t * y - _tri(t - 1)
 
 def candidates():
     # a lot of these limits were determined by brute-force
@@ -34,7 +34,7 @@ def candidates():
 S = list(candidates())
 
 def p1():
-    return max(x[2] for x in S)
+    return max([x[2] for x in S])
 
 # print("min X:", min(x[0] for x in S))
 # print("max X:", max(x[0] for x in S))
